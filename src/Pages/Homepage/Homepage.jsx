@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./Homepage.module.scss"
 import Menu from "../../Components/Menu/Menu"
-
+import menuImg from "../../assets/Rectangle.png"
 const Homepage = ()=>{
     return(
         <div className={styles.Homepage}>
-            <Menu/>
+            <Menu img={menuImg}/>
             <div className={styles.showcase}>
                 <div className={styles.description}>
                     <h2>so,you want to travel to</h2>

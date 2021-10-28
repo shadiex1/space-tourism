@@ -1,0 +1,17 @@
+.Destination{
+    background: url("../../assets/dest/Bitmap-1.jpg") no-repeat center top  ;
+    background-size: cover;
+    height: 100vh;
+    h2{
+        color: white;
+        letter-spacing: 4.725px;
+        text-align: left;
+        font-size: 25px;
+        margin-left: 120px;
+        span{
+            color: white;
+            opacity: 0.25;
+            font-size: 20px;
+        }
+    }
+}

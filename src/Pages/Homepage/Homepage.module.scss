@@ -4,8 +4,10 @@
     height: 100vh;
     .showcase{
         display: flex;
+        width: 90%;
         height: 70%;
         align-items: flex-end;
+        margin: auto;
         .description{
             width: 50%;
             h2{
