@@ -2,4 +2,25 @@
     background: url("../../assets/tech/Bitmap-4.jpg") no-repeat center top  ;
     background-size: cover;
     height: 100vh;
+    .header{
+        width: 80%;
+        margin: auto;
+        h2{
+            color: white;
+            letter-spacing: 4.725px;
+            text-align: left;
+            font-size: 25px;
+            span{
+                color: white;
+                opacity: 0.25;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px){
+    .Technology{
+        height: auto;
+    }
 }

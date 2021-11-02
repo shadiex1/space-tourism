@@ -1,3 +1,95 @@
 .TechTemplate{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: auto;
+    // height: 100%;
+    ul{
+        list-style-type: none;
+        margin-right: 60px;
+        li{
+            margin: 30px 0;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            color: white;
+            background-color: transparent;
+            outline-style: solid;
+            outline-color: white;
+            outline-width: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    }
+    .description{
+        text-align: left;
+        h3{
+            color: rgba(white,.5);
+            font-size: 25px;
+            font-weight: 200;
+            margin: 0;
+        }
+        h2{  color: white;
+            font-size: 50px;
+            font-weight: 200;
+            margin:15px 0;
+            width: auto;}
+        p{
+            font-size: 20px;
+            width: 80%;
+            color: #D0D6F9;
+        }
+    }
+    .imgContainer{
+        margin-top: 20px;
+        display: flex;
+        align-items: flex-end;
+        width: 90%;
+ img{
+        display: block;
+        width: 100%;
+    }
+    }
+   
+}
+
+
+@media screen and (max-width:800px){
+    .TechTemplate{
+        width: 100%;
+        margin: auto;
+        flex-direction: column;
+        .imgContainer{
+            order: 1 ;
+            height: 400px;
+            width: 100%;
+            align-items: stretch;
+
+            img{
+                object-fit:  cover;
+
+            }
+        }ul{
+            order: 2;
+            display: flex;
+            margin: 20px auto;
+            padding: 0;
+            li{
+                margin: 30px;
+            }
+        }.description{
+            order: 3;
+            text-align: center;
+            margin-bottom: 30px;
+            p{
+                width: 90%;
+                margin: auto;
+            }
+        }
+        
+    }
 }

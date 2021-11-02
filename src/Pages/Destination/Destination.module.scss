@@ -2,16 +2,33 @@
     background: url("../../assets/dest/Bitmap-1.jpg") no-repeat center top  ;
     background-size: cover;
     height: 100vh;
-    h2{
+    .header{
+        width: 80%;
+        margin: auto;
+          h2{
         color: white;
         letter-spacing: 4.725px;
         text-align: left;
         font-size: 25px;
-        margin-left: 120px;
+        text-transform: uppercase;
         span{
             color: white;
             opacity: 0.25;
             font-size: 20px;
+        }
+    }
+    }
+  
+}
+
+@media screen and (max-width:800px){
+    .Destination{
+        height: auto;
+        .header{
+            // width: 100%;
+            h2{
+                // text-align: center;
+            }
         }
     }
 }

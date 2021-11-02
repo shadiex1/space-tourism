@@ -21,8 +21,8 @@ class Crew extends Component{
             {
                 id:2,
                 subHeader:"Mission Specialist ",
-                header:"MARK SHUTTLEWORTH",
-                desc:"Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.",
+                header:"MARK Henry",
+                desc:"Mark Richard Henry is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.",
                 img:img2
 
             },
@@ -58,7 +58,9 @@ class Crew extends Component{
     render(){
         return(
             <div className={styles.Crew}>
-                <Menu img={menuImg}/>
+                <Menu activeLink={"Crew"} img={menuImg}/>   
+                             <div className={styles.header}><h2><span>02</span> MEET YOUR CREW</h2></div>
+
                 <CrewTemplate setId={this.setId} items={this.state.items} item={this.state.item}/>
             </div>
         )

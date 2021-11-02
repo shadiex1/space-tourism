@@ -64,8 +64,10 @@ class Destination extends Component{
 
         return(
             <div className={styles.Destination}>
-                   <Menu img={menuImg}/>
+                   <Menu activeLink={"Dest"} img={menuImg}/>
+                   <div className={styles.header}>
                    <h2><span>01</span> Pick your destination</h2>
+                   </div>
                    <DestinationTemplate item={this.state.item} setId={this.setId} items={this.state.items}/>
             </div>
         )

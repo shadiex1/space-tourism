@@ -48,7 +48,9 @@ class Technology extends Component {
     render(){
         return(
                <div className={styles.Technology}>
-            <Menu img={MenuImg}/>
+            <Menu activeLink={"Tech"} img={MenuImg}/>
+            <div className={styles.header}><h2><span>03</span> SPACE LAUNCH 101</h2></div>
+
             <TechTemplate setId={this.setId} items={this.state.items} item={this.state.item}/>
         </div>
         )
