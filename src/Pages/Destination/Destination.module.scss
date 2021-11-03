@@ -24,11 +24,17 @@
 @media screen and (max-width:800px){
     .Destination{
         height: auto;
+    }
+}
+@media screen and (max-width:500px){
+    .Destination{
         .header{
-            // width: 100%;
-            h2{
-                // text-align: center;
-            }
+            width: 100%;
+           h2{
+               text-align: center;
+               font-size: 16px;
+           } 
         }
     }
 }
+

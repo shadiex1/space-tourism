@@ -107,3 +107,30 @@
         }
     }
 }
+
+@media screen and (max-width:500px){
+    .DestinationTemplate{
+        .imgContainer{
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 250px;
+            img{
+                width: 60%;
+                margin-right: 0;
+            }
+        }
+        .description{
+            ul{
+                margin-top: 0px;
+            }
+            h2{
+                font-size: 50px;
+            }
+            p{
+                width: 100%;
+            }
+        }
+    }
+}

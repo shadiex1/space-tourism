@@ -93,3 +93,20 @@
         
     }
 }
+
+@media screen and (max-width:500px){
+    .TechTemplate{
+        .imgContainer{
+            height: 200px;
+         
+        }
+        ul{
+            li{
+                width: 60px;
+                height: 60px;
+                font-size: 20px;
+                margin: 20px;
+            }
+        }
+    }
+}
