@@ -46,17 +46,17 @@ document.body.style.overflow = "auto";
           </div>
           <div className={styles.navigation}>
             <ul>
-              <Link to="/" onClick={closed} className={styles.link}>
+              <Link to={`${process.env.PUBLIC_URL}/`} onClick={closed} className={styles.link}>
                 <li><span>00</span> HOME</li>
               </Link>
-              <Link to="/Destination" onClick={closed} className={styles.link}>
+              <Link to={`${process.env.PUBLIC_URL}/Destination`} onClick={closed} className={styles.link}>
                 <li><span>01</span> DESTINATION</li>
               </Link>
 
-              <Link to="/Crew" className={styles.link} onClick={closed}>
+              <Link to={`${process.env.PUBLIC_URL}/Crew`} className={styles.link} onClick={closed}>
                 <li><span>02</span> CREW</li>
               </Link>
-              <Link to="/Technology" className={styles.link} onClick={closed}>
+              <Link to={`${process.env.PUBLIC_URL}/Technology`} className={styles.link} onClick={closed}>
                 <li><span>03</span> TECHNOLOGY</li>
               </Link>
             </ul>

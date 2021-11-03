@@ -38,17 +38,17 @@ class Menu extends Component{
             <div className={styles.line}></div>
             <div className={styles.nav} style={{backgroundImage: `url(${this.props.img})`}}>
                 <ul>
-                <Link  to="/">
+                <Link  to={`${process.env.PUBLIC_URL}/`}>
                     <li style={activeLink=== "Home"? {borderBottom:"3px solid white"}:null}>00 Home</li>
                     </Link>
-                    <Link  to="/Destination">
+                    <Link  to={`${process.env.PUBLIC_URL}/Destination`}>
                     <li style={activeLink=== "Dest"? {borderBottom:"3px solid white"}:null} >01 destination</li>
                     </Link>
-                    <Link to="/Crew">
+                    <Link to={`${process.env.PUBLIC_URL}/Crew`}>
 
                     <li style={activeLink=== "Crew"? {borderBottom:"3px solid white"}:null}>02 Crew</li>
                     </Link>
-                    <Link to="/Technology">
+                    <Link to={`${process.env.PUBLIC_URL}/Technology`}>
 
                     <li style={activeLink=== "Tech"? {borderBottom:"3px solid white"}:null}>03 Technology</li>
                     </Link>
