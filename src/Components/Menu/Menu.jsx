@@ -1,16 +1,42 @@
-import React from "react";
+import React,{Component} from "react";
 import styles from "./Menu.module.scss";
 import { Logo } from "../Svg";
 import {Link} from "react-router-dom";
-const Menu = (props)=>{
-    const {activeLink} = props
-    return(
+import MenuSidebar from "../MenuSidebar/MenuSidebar";
+class Menu extends Component{
+    state = {
+      showMenuSidebar: false,
+      };
+      showMenuSidebarToggleHandler = () => {
+        this.setState((prevState) => {
+          return { showMenuSidebar: !prevState.showMenuSidebar };
+        });
+      };
+      showMenuSidebarClosedHandler = () => {
+        this.setState({ showMenuSidebar: false });
+      };
+    render(){
+        const {activeLink} = this.props
+ return( <> <MenuSidebar
+          open={this.state.showMenuSidebar}
+          closed={this.showMenuSidebarClosedHandler}
+        />
         <div className={styles.Menu}>
             <div className={styles.logo}>
                 <Logo/>
             </div>
+
+           
+         <div
+            onClick={this.showMenuSidebarToggleHandler}
+            className={styles.toggler}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
             <div className={styles.line}></div>
-            <div className={styles.nav} style={{backgroundImage: `url(${props.img})`}}>
+            <div className={styles.nav} style={{backgroundImage: `url(${this.props.img})`}}>
                 <ul>
                 <Link  to="/">
                     <li style={activeLink=== "Home"? {borderBottom:"3px solid white"}:null}>00 Home</li>
@@ -29,7 +55,10 @@ const Menu = (props)=>{
                 </ul>
             </div>
         </div>
+        </>
     )
+    }
+   
 }
 
 export default Menu
